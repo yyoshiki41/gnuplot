@@ -1,6 +1,4 @@
-# set terminal pngcairo  background "#ffffff" enhanced font "arial,10" fontscale 1.0 size 640, 480
-# set output
-set table "Labo/contour/rosenbrock.table"
+set table "Labo/gnuplot/rosenbrock.table"
 set border 15 front linetype -1 linewidth 1.000
 set key title ""
 set key inside right bottom vertical Right noreverse enhanced autotitles nobox
