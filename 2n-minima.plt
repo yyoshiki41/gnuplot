@@ -6,17 +6,9 @@ set clip one
 unset clip two
 set bar 1.000000 front
 set border 31 front linetype -1 linewidth 1.000
-set timefmt z "%d/%m/%y,%H:%M"
 set zdata
-set timefmt y "%d/%m/%y,%H:%M"
 set ydata
-set timefmt x "%d/%m/%y,%H:%M"
 set xdata
-set timefmt cb "%d/%m/%y,%H:%M"
-set timefmt y2 "%d/%m/%y,%H:%M"
-set y2data
-set timefmt x2 "%d/%m/%y,%H:%M"
-set x2data
 set boxwidth
 set style fill  empty border
 set style rectangle back fc lt -3 fillstyle   solid 1.00 border lt -1
@@ -25,19 +17,18 @@ set style ellipse size graph 0.05, 0.03, first 0 angle 0 units xy
 set dummy x,y
 set format x "% g"
 set format y "% g"
-set format x2 "% g"
-set format y2 "% g"
 set format z "% g"
 set format cb "% g"
 set format r "% g"
 set angles radians
 unset grid
 set raxis
-set key title ""
-set key outside right top vertical Right noreverse enhanced autotitles nobox
-set key noinvert samplen 4 spacing 1 width 0 height 0
-set key maxcolumns 0 maxrows 0
-set key noopaque
+#set key title ""
+#set key outside right top vertical Right noreverse enhanced autotitles nobox
+#set key noinvert samplen 4 spacing 1 width 0 height 0
+#set key maxcolumns 0 maxrows 0
+#set key noopaque
+set nokey
 unset label
 unset arrow
 set style increment default
@@ -95,9 +86,6 @@ set rtics axis in scale 1,0.5 nomirror norotate  offset character 0, 0, 0 autoju
 set rtics autofreq  norangelimit
 set title ""
 set title  offset character 0, 0, 0 font "" norotate
-set timestamp bottom
-set timestamp ""
-set timestamp  offset character 0, 0, 0 font "" norotate
 set rrange [ * : * ] noreverse nowriteback
 set trange [ * : * ] noreverse nowriteback
 set urange [ * : * ] noreverse nowriteback
@@ -129,7 +117,7 @@ set tmargin  -1
 set pm3d explicit at s
 set pm3d scansautomatic
 set pm3d interpolate 1,1 flush begin noftriangles nohidden3d corners2color mean
-set palette positive nops_allcF maxcolors 0 gamma 1.5 color model RGB 
+set palette positive nops_allcF maxcolors 0 gamma 1.5 color model RGB
 set palette rgbformulae 7, 5, 15
 set colorbox default
 set colorbox vertical origin screen 0.9, 0.2, 0 size screen 0.05, 0.6, 0 front bdefault

@@ -1,3 +1,4 @@
+#!/gnuplot
 set table "Labo/gnuplot/rosenbrock.table"
 set border 15 front linetype -1 linewidth 1.000
 set key title ""
