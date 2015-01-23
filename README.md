@@ -11,18 +11,18 @@ gnuplot> plot "gnuplot/function.table" with line, "gnuplot/1,1.txt" us 2:3 w lp 
 </pre>
 
 ###Change Terminal
->Aqua Terminal
+> ■Aqua Terminal
 <pre>
 gnuplot> set term aqua
 </pre>
 
->EPS(monochrome)
+> ■EPS(monochrome)
 <pre>
 gnuplot> set term postscript eps enhanced size 12cm,12cm
 gnuplot> set output "/gnuplot/file.eps"
 </pre>
 
->png
+> ■png
 <pre>
 gnuplot> set term png size 640,480
 gnuplot> set output "gnuplot/file.png"
