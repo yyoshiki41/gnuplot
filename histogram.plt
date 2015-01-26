@@ -4,6 +4,8 @@ set datafile separator whitespace
 set style histogram clustered
 set style fill solid border lc rgb "black"
 
+set boxwidth 1
+
 set key box
 set key right top
 set key noopaque
@@ -15,6 +17,8 @@ set xlabel font "Times New Roman, 25" textcolor lt -1 norotate
 set ylabel "Frequency"
 set ylabel font "Times New Roman, 25"  textcolor lt -1 rotate by -270
 
-set tics font "Times New Roman, 13"
+set tics font "Times New Roman, 18"
+set xtics rotate by -20
+
 
 #    EOF
